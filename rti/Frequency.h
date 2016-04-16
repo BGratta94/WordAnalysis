@@ -11,6 +11,7 @@
 #include <rti_word.h>
 #include <algorithm>
 #include <vector>
+#include <StateList.h>
 
 class Frequency
 {
@@ -61,7 +62,7 @@ rti_word Frequency::compareLists(rti_word stateList[], rti_word gradeList[])
 			notFound = false;
 			for(n=0;n<sizeof gradeList;n++)
 			{
-				if(gradeList[n].spelling() == temp.spelling())
+				if(gradeList[n].spelling() == temp)
 				{
 					notFound = false;
 					break;

@@ -51,8 +51,6 @@ rti_word Frequency::compareLists(rti_word stateList[], rti_word gradeList[])
 {
 		//perform a set difference on the two lists (cplusplus.com)
 		//return the resulting list
-		stateList = bubbleSort(sizeof stateList,stateList);
-		gradeList = bubbleSort(sizeof gradeList,gradeList);
 		std::vector<rti_word> v;
 		rti_word temp;
 		int i,n;

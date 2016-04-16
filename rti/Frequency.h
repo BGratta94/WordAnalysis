@@ -30,7 +30,7 @@ class Frequency
 			{
 				for(j=i;j<sizeof(words); j++)
 				{
-					if(words[j].frequency()< words[i].frequency())
+					if(words[j].frequency() > words[i].frequency())
 					{
 						rti_word temp = words[i];
 						words[i] = words[j];

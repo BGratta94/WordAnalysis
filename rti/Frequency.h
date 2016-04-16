@@ -44,7 +44,13 @@ class Frequency
 
 rti_word Frequency::getTopNum(int x, rti_word wordList[] ) //x is the size number of words requested
 {
-	rti_word words[x] = bubbleSort(x,wordList);
+	rti_word words[x];
+	bubbleSort(x,wordList);
+	int i;
+	for(i=0; i<x;i++)
+	{
+		words[i] = wordList[i];
+	}
 	return words;
 }
 
